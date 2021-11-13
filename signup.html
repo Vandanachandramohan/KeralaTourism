@@ -31,7 +31,7 @@
         <div class="box">
           <div class="head"><h5 >Sign Up</h5>
           </div>
-          <form action="home.html" onsubmit="return validate() && validate1() && validate2() &&validate3()">
+          <form action="home.html" onsubmit="return validate() && validate1() && validate3()">
             <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="inputEmail4">Email</label>
@@ -51,8 +51,9 @@
             </div>
             <div class="form-group">
               <label for="inputPhone">Phone</label>
-              <input type="text" class="form-control" id="inputPhone" placeholder="Enter phone no">
+              <input type="text" class="form-control" id="inputPhone" pattern="^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$" placeholder="Enter phone no">
               <label for="error3" id="error3"></label>
+            
             </div>
       
            <!--<div class="form-group">
@@ -95,5 +96,6 @@
      </div>
     </div>
  </section>
+
  <script src="script.js"></script>
 </body>

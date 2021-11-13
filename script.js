@@ -54,18 +54,13 @@ function validate1() {
 
 /* Phone-validation */
 
-function validate2() {
-
-let regexp2 = /^\d{10}$/;
-
-if(regexp2.test(phone.value)){
-    error3.innerHTML="Valid format";
-    error3.style.color="green";
-    return true;
-}
-else{
-    error3.innerHTML="Invalid format";
-    error3.style.color="red";
-    return false;
+function validate2(){
+    if(phone.value.trim()==""){
+        error3.innerHTML="Empty field";
+        error3.style.color="red";
+        return false;
+    }
+    else{
+        return true;
     }
 }
